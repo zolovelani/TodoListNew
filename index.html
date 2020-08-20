@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style/style.css">
+   
+    <title>Todo list</title>
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="header">
+      </div>
+    </div>
+
+      <section class="main-section"> 
+          <div id="titleContainer">
+          </div>
+          <img src="ToDoList_1920x1080.jpg">
+          <div class="col-12 list-wrapper">
+            <div id="date">
+          </div>
+         
+          <div id="tasksContainer" style="height: 300px; width:100%; color: black;">
+          </div>
+          
+            <div class="clear">
+              <i class="fa fa-refresh"></i> 
+            </div>
+
+            <form class="add-items">
+              <input type="text" name="item" placeholder="Enter your task" required />
+              <input type="date" name="duedate" placeholder="Enter your task" required />
+              <input type="submit" value=" + Add Item " />
+            </form>
+        </div>
+      </section>  
+
+    <script id="title-template" type="text/x-handlebars-template">
+      <h1>{{title}}</h1>
+    </script>
+
+    <script id="task-template" type="text/x-handlebars-template">
+        <ul class="to-do-list">
+          {{#items}}
+            <li>{{text}} - &nbsp; Completed by: &nbsp; <b>{{date}}</b></li>
+          {{/items}}
+        </ul>
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.7/handlebars.min.js"></script>
+    <script	src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script	src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
