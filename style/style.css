@@ -1,0 +1,110 @@
+html{
+    font-family: Helvetica, sans-serif;
+    font-size: 21px;
+    box-sizing: border-box;
+    
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+#date{
+  position: absolute;
+  top: -180px;
+  left: 210px;
+  color:black;
+  font-size: 25px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-section{
+  background-color:rgba(204, 133, 74, 0.623);
+  border-radius: 30px;
+  
+}
+
+.list-wrapper {
+    margin-top: 320px;
+    padding: 20px;
+    background: transparent;
+    
+  }
+
+  .clear{
+    width : 30px;
+    height: 30px;
+    position: absolute;
+    right:20px;
+    top: 20px;
+}
+.clear i{
+    font-size: 30px;
+    color: white;
+}
+
+.clear i:hover{
+  cursor: pointer;
+  text-shadow: 1px 3px 5px #000;
+  transform: rotate(45deg);
+}
+  
+  h1 {
+    text-align: center;
+    margin: 0;
+    font-weight: 200;
+  }
+  
+  .to-do-list {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style: none;
+  }
+  
+  .to-do-list li {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 10px 0;
+    font-weight: 100;
+    display: flex;
+  }
+  
+  .to-do-list label {
+    flex: 1;
+    cursor: pointer;
+  }
+  
+  .to-do-list input {
+    display: none;
+  }
+  
+  .to-do-list input + label:before {
+    content: '⬜️';
+    margin-right: 10px;
+  }
+  
+  .to-do-list input:checked + label:before {
+    content: '🎉';
+  }
+  
+  .add-items {
+    margin-top: 20px;
+  }
+  
+  .add-items input {
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+
+  img {
+   position: absolute;
+    height:44.7%;
+    width:44.7%;
+  
+
+  }
+
+  
